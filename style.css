@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat';
+
 }
 
 #container {
@@ -7,8 +8,18 @@ body {
     max-width: 960px;
     margin: 40px auto;
     padding: 32px;
-    background: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+#container img{
+    position: absolute;
+    left: 42%;
+    top: 50%;
+    width: 20%;
+    height: auto;
+    opacity: 0.1;
+    z-index: -1;
 }
 
 section {
@@ -27,6 +38,11 @@ section {
     background-size: 189px 189px;
     grid-row: 1 / 2;
     border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.avatar:hover {
+    transform: scale(1.1);
 }
 
 .name{
@@ -34,6 +50,7 @@ section {
     padding-left: 15px;
     padding-top: 15px;
     grid-row: 1 / 2;
+
 }
 
 .name:hover, .name:active {
@@ -71,7 +88,6 @@ hr.na {
 .experience {
     grid-row: 1 / 3;
     grid-column: 2 / 3;
-    background: white;
     padding-left: 15px;
     padding-top: 15px;
 }
@@ -79,7 +95,6 @@ hr.na {
 .education {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-    background: white;
     padding-left: 15px;
     padding-top: 15px;
 }
@@ -87,7 +102,7 @@ hr.na {
 .award {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    background: white;
+
     padding-left: 15px;
     padding-top: 15px;
 }
@@ -172,6 +187,7 @@ li {
 @keyframes text {
     0%{
         color: white;
+        font-size: 12px;
 
     }
 
@@ -182,6 +198,23 @@ li {
 
     85%{
         letter-spacing: 1px;
+        font-size: 14px;
+    }
+}
+
+img {
+    animation: img-appear 2s 1;
+}
+
+@keyframes img-appear {
+    0%{
+        opacity: 0;
+        width: 5%;
 
     }
+
+    50%{
+        width: 15%;
+    }
+
 }
