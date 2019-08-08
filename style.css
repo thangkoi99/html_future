@@ -107,6 +107,11 @@ hr.na {
     padding-top: 15px;
 }
 
+a {
+    text-decoration: none;
+    color: #74a1ba;
+}
+
 .contact {
     grid-column: 1 / 2;
 }
