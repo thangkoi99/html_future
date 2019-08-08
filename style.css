@@ -148,33 +148,6 @@ hr.na {
     margin-bottom:2px;
 }
 
-.top2 {
-    z-index: 1;
-}
-
-
-/*p, li {*/
-/*    position: relative;*/
-/*    overflow: hidden;*/
-/*    background: linear-gradient(90deg, #000, #fff, #000);*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: 80%;*/
-
-/*    animation: animate 3s linear;*/
-
-/*    -webkit-background-clip: text;*/
-/*    -webkit-text-fill-color: rgba(0, 255, 255, 0.9);*/
-/*    animation-fill-mode: forwards;*/
-/*}*/
-
-/*@keyframes animate {*/
-/*    0% {*/
-/*        background-position: -500%;*/
-/*    }*/
-/*    100% {*/
-/*        background-position: 500%;*/
-/*    }*/
-/*}*/
 
 p {
     animation: text 3s 1;
@@ -186,19 +159,19 @@ li {
 
 @keyframes text {
     0%{
-        color: white;
-        font-size: 12px;
+        opacity: 0;
+        /*font-size: 12px;*/
 
     }
 
     30%{
-        letter-spacing: 2px;
+        letter-spacing: 1px;
 
     }
 
     85%{
-        letter-spacing: 1px;
-        font-size: 14px;
+        letter-spacing: 0.5px;
+        /*font-size: 14px;*/
     }
 }
 
