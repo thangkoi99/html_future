@@ -160,3 +160,28 @@ hr.na {
 /*        background-position: 500%;*/
 /*    }*/
 /*}*/
+
+p {
+    animation: text 3s 1;
+}
+
+li {
+    animation: text 3s 1;
+}
+
+@keyframes text {
+    0%{
+        color: white;
+
+    }
+
+    30%{
+        letter-spacing: 2px;
+
+    }
+
+    85%{
+        letter-spacing: 1px;
+
+    }
+}
