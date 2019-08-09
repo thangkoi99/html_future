@@ -244,3 +244,12 @@ img {
 .experience h4 {
     padding-top: 4px;
 }
+
+.vl {
+    border-left: 6px dotted #74a1ba;
+    height: 100px;
+    position: absolute;
+    left: 39%;
+    margin-left: -3px;
+    top: 390px;
+}
