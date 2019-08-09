@@ -195,3 +195,52 @@ img {
     }
 
 }
+
+.reference {
+    grid-column: 2 / 3;
+    padding-left: 15px;
+    margin-top: -20px;
+}
+
+#ref {
+    background-image: url("ref.jpg");
+
+}
+
+.contact p{
+    display: inline-block;
+}
+
+.sub_contact {
+    vertical-align: center;
+    margin-bottom: 10px;
+}
+
+.sub_experience {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: minmax(150px, auto);
+
+}
+
+.timeline {
+    display: grid;
+    grid-column: 1 / 2;
+}
+
+.job {
+    display: grid;
+    grid-column: 2 / 3;
+}
+
+.job1 {
+    grid-row: 1 / 2;
+}
+
+.job2 {
+    grid-row: 2 / 3;
+}
+
+.experience h4 {
+    padding-top: 4px;
+}
