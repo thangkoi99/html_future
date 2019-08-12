@@ -37,7 +37,6 @@ section {
     background-image: url("avatar.png");
     background-size: 189px 189px;
     grid-row: 1 / 2;
-    transition: all 0.5s;
     border: 2px solid red;
 }
 
@@ -104,11 +103,6 @@ hr.na {
     border: 2px solid red;
 }
 
-a {
-    text-decoration: none;
-    color: #74a1ba;
-}
-
 .contact {
     grid-column: 1 / 2;
     border: 2px solid red;
@@ -120,9 +114,6 @@ a {
     border: 2px solid red;
 }
 
-.skill p {
-    color: white;
-}
 
 .language {
     grid-column: 1 / 2;
@@ -132,7 +123,6 @@ a {
 
 .sk {
     border: 1px solid #74a1ba;
-    background-color: #74a1ba;
     border-radius: 5px;
     margin-top: 6px;
     margin-bottom: 6px;
@@ -165,3 +155,71 @@ a {
     padding-top: 4px;
 }
 
+@media only screen and (max-width: 768px) {
+     section {
+        display: block;
+    }
+
+    .avatar, .name, .education, .award, .experience, .skill, .language {
+        margin-bottom: 10px;
+        padding-left: 0;
+    }
+
+    .avatar {
+        width: 266px;
+        height: 266px;
+        background-size: cover;
+        margin-top: -40px;
+    }
+
+    p, h1, h2, h3, h4, li {
+        font-size: 80%;
+    }
+
+    #container {
+        box-shadow: 0 0 0 white;
+    }
+
+
+}
+
+@media only screen and (min-width: 361px) and (max-width: 640px) {
+    p, h1, h2, h3, h4, li {
+        font-size: 80%;
+    }
+
+    #container {
+        box-shadow: 0 0 0 white;
+    }
+
+    section:first-child {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin-bottom: -90px;
+    }
+    .avatar {
+        grid-column: 1 / 2;
+        width: 100%;
+        height: 68%;
+        margin-right: 10px;
+    }
+
+    .name {
+        grid-column: 2 / 3;
+        height: 69%;
+        margin-top: -40px;
+        padding-top: 0;
+    }
+
+    section {
+        display: block;
+    }
+
+    .education, .award, .experience, .skill, .language, .contact {
+        margin-bottom: 10px;
+        padding-left: 0;
+    }
+
+
+
+}

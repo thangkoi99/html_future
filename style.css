@@ -12,7 +12,7 @@ body {
     z-index: 2;
 }
 
-#container img{
+.background-img {
     position: absolute;
     left: 42%;
     top: 50%;
@@ -180,8 +180,17 @@ li {
     }
 }
 
-img {
+.background-img {
     animation: img-appear 2s 1;
+}
+
+.reference img {
+    position: absolute;
+    left: 42%;
+    top: 50%;
+    width: 20%;
+    height: auto;
+    opacity: 1;
 }
 
 @keyframes img-appear {
@@ -252,4 +261,9 @@ img {
     left: 39%;
     margin-left: -3px;
     top: 390px;
+}
+
+.IMG {
+    position: absolute;
+    top: 50px;
 }
